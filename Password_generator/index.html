@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>PassGen</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Generate a <br /><span>random password</span></h1>
+      <p class="ran_txt">Never use an insecure password again.</p>
+      <div class="cdn">
+        <button id="gen-btn" onclick="generate()">Generate passwords</button>
+        <input
+          id="num-len"
+          name="num-len"
+          type="number"
+          max="15"
+          min="8"
+          step="1"
+          placeholder="Length(8-20)*"
+          required
+        />
+        <div class="warn">Pls Enter Proper Length</div>
+      </div>
+      <div class="checks">
+        <input class="switch_1" type="checkbox" name="nums" id="inc-num" />
+        <label for="nums">Include Numbers</label>
+        <input class="switch_1" type="checkbox" name="symbols" id="inc-sym" />
+        <label for="symbols">Include Symbols</label>
+      </div>
+      <div class="line"></div>
+      <div class="pass-field">
+        <div class="r-pass a">
+          <p id="pass-1"></p>
+          <div class="popup x"><h4>Copied</h4></div>
+        </div>
+
+        <div class="r-pass b">
+          <p id="pass-2"></p>
+          <div class="popup y"><h4>Copied</h4></div>
+        </div>
+        
+      </div>
+        <input class="switch_1" type="checkbox" name="symbols" id="night-mode" />
+        
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+const toggleSelector = document.querySelector("#night-mode");
+
+function toggler(e){
+    if(e.target.checked){
+        document.documentElement.setAttribute("data-item", "dark")
+    }else{
+        document.documentElement.setAttribute("data-item", "light")
+    }
+}
+
+toggleSelector.addEventListener('change', toggler,false)
